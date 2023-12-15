@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;500;700&display=swap');
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --border: 0.1rem solid var(--black);
+    --main-color: #ff4700;
+    --second-color: #7b1830;
+    --intermediaro: #2f0918;
+}
+
+*{
+    font-family: 'Manrope', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: capitalize;
+    border: none; outline: none;
+    transition: 0.2s all linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background: var(--black);
+}
+
+.drop-down{
+    position: absolute;
+    top: 4rem; left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(0.3rem);
+    width: 20rem; height: max-content;
+    color: var(--main-color);
+    display: none;
+}
+
+.drop-down.active{
+    display: block;
+}
+
+.select{
+    position: relative;
+    color: var(--main-color);
+    font-size: 1.6rem;
+    position: absolute;
+    top: 1rem; left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.select::after{
+    transition: 0.2s linear;
+    position: absolute;
+    top: -1rem;
+    content: "^";
+    display: inline-block;
+    width: 3rem; height: 3rem;
+    transform: rotate(180deg);
+    color: var(--main-color);
+}
+
+.select.active::after{
+    transform: rotate(0deg);
+    top: 0rem;
+}
+
+.select > span{
+    color: var(--white);
+}
+
+.drop{
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    cursor: pointer;
+    display: block;
+}
+
+.drop:hover{
+    color: var(--white);
+}
+
+.fa-music{
+    position: absolute;
+    top: 2rem; right: 2rem;
+    width: 3rem; height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background: var(--main-color);
+    color: var(--white);
+    font-size: 1.6rem;
+}
+
+
+#canvas{
+    position: absolute;
+    bottom: -6%; left: 0;
+    z-index: -1;
+}
+
+.content{
+    position: relative;
+}
+
+.music{
+    background: linear-gradient(-30deg, transparent, transparent, var(--intermediaro), var(--second-color));
+    padding: 4rem 2rem;
+    width: 36rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.music .title{
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    color: var(--white);
+}
+
+
+.music .box img{
+    width: 100%;
+    height: 32rem;
+    object-fit: cover;
+    margin-bottom: 2rem;
+}
+
+.music .box h3{
+    width: 100%;
+    font-size: 2rem;
+    color: var(--main-color);
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    direction: ltr;
+}
+
+.music .box h2{
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+    color: var(--white);
+    font-weight: lighter;
+    text-align: left;
+}
+
+.music .box .content .playmod .controls{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.music .box .content .playmod .range-container{
+    position: relative;
+    margin-top: 4rem;
+}
+
+.music .box .content .playmod .opcoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.music .box .content .playmod .opcoes span{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.music .box .content .playmod .opcoes span:hover{
+    color: var(--main-color);
+}
+
+.music .box .content .playmod .opcoes .random.active,
+.music .box .content .playmod .opcoes .repeat.active{
+    color: var(--main-color);
+}
+
+.music .box .content .playmod i{
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.music .box .content .playmod .controls .fa-play,
+.music .box .content .playmod .controls .fa-pause{
+    background: var(--black);
+    color: var(--main-color);
+    width: 5rem; height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.music .box .content .playmod .controls .fa-play:hover,
+.music .box .content .playmod .controls .fa-pause:hover{
+    background: var(--black);
+    color: rgb(80, 80, 80);
+}
+
+.music .box .content .playmod .range{
+    width: 100%;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 3rem;
+    position: absolute;
+    bottom: -0.45rem; left: 0;
+    z-index: 2;
+}
+
+.music .box .content .playmod i:hover{
+    color: var(--main-color);
+}
+
+.music .box .content .playmod .time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+}
+
+.music .box .content .playmod span{
+    display: inline-block;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+.music .box .content .playmod progress{
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0; left: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.music .box .content .playmod progress::-webkit-progress-value{
+    background: var(--main-color);
+    height: 10px;
+    width: 100%;
+}
+.music .box .content .playmod progress::-moz-progress-bar{
+    height: 10px;
+    width: 100%;
+    background: rgb(80, 80, 80);
+}
+
+.music .box .content .playmod progress::-webkit-progress-bar{
+    height: 10px;
+    width: 100%;
+    background: rgb(80, 80, 80);
+}
+
+.music .box .content .playmod input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--white);
+    cursor: pointer;
+}
+

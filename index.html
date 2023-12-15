@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <canvas style="display: none;" id="canvas-color"></canvas>
+    <audio src="audio/rey/Pegboard_Nerds_-_High_Roller_Dodge_Fuski_Remix.mp3"></audio>
+    <div class="music">
+        <span class="select"><span>@reyh4ll</span> Playlist</span>
+        <div class="drop-down">
+            <span data-fetch="./rey.json" data-name="@reyh4ll" class="drop">@reyh4ll Playlist</span>
+            <span data-fetch="./rui.json" data-name="@ruih4ll" class="drop">@ruih4ll Playlist</span>
+            <span data-fetch="./douglas.json" data-name="@douglas" class="drop">@douglas Playlist</span>
+        </div>
+        <div class="box">
+            <img src="img/High-roller.webp" alt="High-roller">
+            <div class="content">
+                <canvas id="canvas" width="320" height="320"></canvas>
+                <h3>High Roller (Dodge_Fuski_Remix)</h3>
+                <h2>Pegboard_Nerds</h2>
+                <div class="playmod"">
+                    <div class="controls" >
+                        <i class="fa-solid fa-backward-step backward"></i>
+                        <i class="fa-solid fa-play"></i>
+                        <i class="fa-solid fa-forward-step forward"></i>
+                    </div>
+                    <div class="range-container">
+                        <progress value="0" min="0" max="100"></progress>
+                        <input class="range" type="range" min="0" max= "100"value="0">
+                    </div>
+                    <div class="time">
+                        <span class="timeinicial">0:00</span>
+                        <span class="timefinal">2:30</span>
+                    </div>
+
+                    <div class="opcoes">
+                        <span class="fa-solid fa-repeat repeat"></span>
+                        <span class="fa-solid fa-shuffle random"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <script src="js/audiovisualizer.js"></script>
+</body>
+</html>

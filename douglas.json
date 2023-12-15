@@ -1,0 +1,43 @@
+[
+    {
+        "capa": "img/High-roller.webp",
+        "nome": "High Roller (Dodge_Fuski_Remix)",
+        "artista": "Pegboard_Nerds",
+        "audioSrc": "audio/rey/Pegboard_Nerds_-_High_Roller_Dodge_Fuski_Remix.mp3"
+    },
+    
+    {
+        "capa": "img/Astronomia Capa.jpg",
+        "nome": "Astronomia",
+        "artista": "Vicetone, Tony igy",
+        "audioSrc": "audio/rey/Vicetone & Tony igy - Astronomia.mp3"
+    },
+    
+    {
+        "capa": "img/Tobu Life.jpg",
+        "nome": "Life",
+        "artista": "Tobu",
+        "audioSrc": "audio/rey/Tobu - Life.mp3"
+    },
+
+    {
+        "capa": "img/Pushed Down.jpeg",
+        "nome": "Pushed Down (feat. Caroline)",
+        "artista": "Stahl, Caroline ",
+        "audioSrc": "audio/rey/Stahl - Pushed Down (feat. Caroline).mp3"
+    },
+
+    {
+        "capa": "img/In My Mind.jpeg",
+        "nome": "In My Mind",
+        "artista": "Dynoro, Gigi D.Agostino",
+        "audioSrc":"audio/rey/Dynoro feat.Gigi D Agostino - In My Mind.mp3"
+    },
+
+    {
+        "capa": "img/Don't Let Me Down.jpg",
+        "nome": "Don't Let Me Down (Illenium Remix)",
+        "artista": "The Chainsmokers, Illenium",
+        "audioSrc":"audio/rey/The Chainsmokers - Don't Let Me Down (Illenium Remix).mp3"
+    }
+]

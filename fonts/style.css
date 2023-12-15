@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?8ag478');
+  src:  url('fonts/icomoon.eot?8ag478#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?8ag478') format('truetype'),
+    url('fonts/icomoon.woff?8ag478') format('woff'),
+    url('fonts/icomoon.svg?8ag478#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Font-rey-seta .path1:before {
+  content: "\36";
+  color: rgb(255, 255, 255);
+}
+.icon-Font-rey-seta .path2:before {
+  content: "\37";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Font-rey-shuffle .path1:before {
+  content: "\39";
+  color: rgb(255, 255, 255);
+}
+.icon-Font-rey-shuffle .path2:before {
+  content: "\3a";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Font-rey-mute .path1:before {
+  content: "\30";
+  color: rgb(255, 255, 255);
+}
+.icon-Font-rey-mute .path2:before {
+  content: "\31";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Font-rey-front .path1:before {
+  content: "\3e";
+  color: rgb(255, 255, 255);
+}
+.icon-Font-rey-front .path2:before {
+  content: "\3f";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Font-rey-back .path1:before {
+  content: "\3c";
+  color: rgb(255, 255, 255);
+}
+.icon-Font-rey-back .path2:before {
+  content: "\3d";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Font-rey-music .path1:before {
+  content: "\6d";
+  color: rgb(255, 255, 255);
+}
+.icon-Font-rey-music .path2:before {
+  content: "\6e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Font-rey-pause .path1:before {
+  content: "\70";
+  color: rgb(255, 255, 255);
+}
+.icon-Font-rey-pause .path2:before {
+  content: "\71";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-Font-rey-play .path1:before {
+  content: "\72";
+  color: rgb(255, 255, 255);
+}
+.icon-Font-rey-play .path2:before {
+  content: "\73";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
